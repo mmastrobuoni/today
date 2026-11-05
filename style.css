@@ -16,3 +16,20 @@ nav{background:#e9e4d9}nav .active{background:#fffdf8}
 @keyframes add-sheet{from{opacity:0;translate:0 -35px;rotate:-8deg}to{opacity:1;translate:0 0;rotate:0deg}}.new-sheet{animation:add-sheet .65s ease-out both}
 @media(max-width:400px){h1{font-size:40px}.progress-paper{gap:12px;padding:13px 12px}.paper-stack{flex-basis:85px}.sheet,.stack-outline{width:74px;left:2px}.stack-copy h2{font-size:15px}footer{gap:20px;line-height:1.5}}
 @media(prefers-reduced-motion:reduce){.new-sheet{animation:none}}
+
+body[data-view="today"] .progress-paper{margin:22px 0 18px;padding:10px 14px;gap:12px}
+body[data-view="today"] .paper-stack{height:58px;flex-basis:76px;overflow:hidden}
+body[data-view="today"] .sheet,body[data-view="today"] .stack-outline{width:60px;height:31px}
+body[data-view="today"] .stack-copy .eyebrow,body[data-view="today"] .stack-copy small{display:none}
+body[data-view="today"] .stack-copy h2{font-size:14px}
+body[data-view="today"] .stack-copy p:not(.eyebrow){margin:4px 0 0}
+@media(max-width:600px){
+ main{padding:14px 18px 100px}header{min-height:40px}.brand span{font-size:12px}
+ .intro{padding:8px 0 12px}.intro .eyebrow{font-size:10px;margin:3px 0 9px}
+ h1{font-size:30px;line-height:1.1;letter-spacing:-1px;margin:8px 0}h1 br{display:none}
+ .intro>.muted{font-size:12px;margin:8px 0 0}
+ nav{margin-bottom:16px}nav button{font-size:13px}.section-title{margin:16px 0 11px}
+ .task{padding:12px;margin:9px 0;gap:10px}.meta{font-size:12px}
+ .choices button{min-height:110px;padding:14px;gap:6px}.choices button>span{font-size:21px}
+ .add{bottom:max(14px,env(safe-area-inset-bottom));padding:12px 20px}
+}
