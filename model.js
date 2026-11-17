@@ -35,3 +35,5 @@ export function undoCompletion(data,id,now){
  }else if(t.steps.length)t.steps.forEach(s=>s.done=false);
  e.deletedAt=now;e.updatedAt=now;t.updatedAt=now;return true;
 }
+
+export function weeklyTimeLeft(today=day()){const days=7-((new Date(today+'T12:00:00').getDay()+6)%7);return days===1?'Last day · ends today':days+' days left · including today'}
