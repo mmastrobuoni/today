@@ -62,3 +62,5 @@ dialog{background:#f2f2ee}input,select,textarea{border-color:#bfc8cb;background:
 .new-orbit{animation:circle-in .6s ease-out}
 @media(prefers-reduced-motion:reduce){.new-orbit{animation:none}}
 @media(max-width:600px){.brand span{font-size:10px}.circle-art{flex-basis:100px;height:110px}.stack-copy{min-width:0}.progress-paper{gap:12px}}
+
+.intro{padding:8px 0 12px}.intro:after{display:none}.intro .eyebrow{margin:3px 0 9px}
